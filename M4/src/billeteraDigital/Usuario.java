@@ -5,7 +5,7 @@ public class Usuario {
 
     // Atributos
     private String usuario;
-    private String Cuenta = "123456";
+    private String cuenta;
     private static float saldo;
 
     // Getter y Setter
@@ -18,11 +18,11 @@ public class Usuario {
     }
 
     public String getCuenta() {
-        return Cuenta;
+        return cuenta;
     }
 
     public void setCuenta(String cuenta) {
-        Cuenta = cuenta;
+        this.cuenta = cuenta;
     }
 
     public Float getSaldo() {
@@ -34,7 +34,8 @@ public class Usuario {
     }
 
     // constructor
-    public Usuario(Float saldo) {
+    public Usuario(String cuenta, Float saldo) {
+        this.cuenta = cuenta;
         this.saldo = saldo;
     }
 
